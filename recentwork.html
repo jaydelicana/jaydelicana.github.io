@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- always check the referenced sources of JS and CSS -->
+  <!-- <link rel="stylesheet" href="assets/css/lightbox.min.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+  <!-- <script src="assets/js/lightbox-plus-jquery.min.js"></script> -->
+
+
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    .Portfolio,
+    .Powerapps,
+    .Chatbot .Components {
+      display: none
+    }
+
+    /* img {
+      vertical-align: middle;
+      max-width: 200px;
+      max-height: 300px;
+    } */
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 100%;
+      max-height: 100%;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover,
+    .next:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    .imagethumbnail {
+      max-width: 400px;
+      max-height: 600px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <h2 style="text-align:left">Recent Work</h2> -->
+  <!-- change class to row -->
+
+  <div class="row">
+
+    <article class="col-6 col-12-xsmall work-item">
+      <h3> GitHUB Portfolio Website:</h3>
+
+
+      <div class="Portfolio" style="display: block;">
+        <a href="images/Portfolio Website/GitHub.png"  data-lightbox="Portfolio" data-title="GitHub Repository">
+          <img src="images/thumbs/HQ-Portfolio Website.jpg" alt="Portfolio Website using HTML, CSS, and JavaScript"
+            width="450px" height="350px"> </a>
+
+      </div>
+
+
+      <p> This portfolio website is built using HTML, CSS and JavaScript and hosted on GitHUB. Used HTML template to
+        create the structure. CSS for styling and JavaScript for functionality.
+        <br>
+      </p>
+
+      <div class="Portfolio">
+        <a href="images/Portfolio Website/HTML5 Template.png" data-lightbox="Portfolio"
+          data-title="Using HTML 5 Templates">
+          <!-- <img src="images/Certificates/CERT-Fundamentals-Power-Platform.png">  -->
+        </a>
+      </div>
+
+      <div class="Portfolio">
+        <a href="images/Portfolio Website/Calling Multiple HTML Files.png" data-lightbox="Portfolio"
+          data-title=" Dividing the website into sections using different HTML files">
+        </a>
+      </div>
+
+      <div class="Portfolio">
+        <a href="images/Portfolio Website/Recent work 1.png" data-lightbox="Portfolio"
+          data-title="Recent work section divided into a seperate HTML file">
+        </a>
+      </div>
+
+      <div class="Portfolio">
+        <a href="images/Portfolio Website/Include HTML File.png" data-lightbox="Portfolio"
+          data-title="Inserting the HTML file using w3-include-html into this section">
+        </a>
+      </div>
+
+    </article>
+
+    <article class="col-6 col-12-xsmall work-item">
+      <h3>PowerApps Request Approval:</h3>
+      <div class="Powerapps" style="display: block;">
+        <a href="images/Canvas Apps/Submit New Request.png" data-lightbox="Powerapps" data-title="Submit a new request">
+          <img src="images/thumbs/HQ-PowerApps.jpg" width="450px" height="350px"> </a>
+      </div>
+
+      <p> This is a generic approval process involving two people. Using Power Apps to create a form to input data.
+        Saving and updating data to a sharepoint database. And
+        sending email notifications to corresponding approvers. Upon clicking the email link, open the specific record
+        in the app.
+        <br>
+      </p>
+
+      <div class="Powerapps">
+        <a href="images/Canvas Apps/Approver 1 - Email.png" data-lightbox="Powerapps"
+          data-title="Email to Approver with clickable link">
+          <!-- <img src="images/MS Logo/New SP online.jpeg">  -->
+        </a>
+      </div>
+
+      <div class="Powerapps">
+        <a href="images/Canvas Apps/DM - No Comments.png" data-lightbox="Powerapps"
+          data-title="Approval window for Department Manager">
+          <!-- <img src="images/MS Logo/Power Automate.png">  -->
+        </a>
+      </div>
+
+      <div class="Powerapps">
+        <a href="images/Canvas Apps/DM Approved.png" data-lightbox="Powerapps"
+          data-title="Reject and More Info buttons showing after comments are input">
+          <!-- <img src="images/MS Logo/Power Automate.png">  -->
+        </a>
+      </div>
+
+      <div class="Powerapps">
+        <a href="images/Canvas Apps/Submit Success.png" data-lightbox="Powerapps"
+          data-title="Submit Success After Clicking the button">
+          <!-- <img src="images/MS Logo/Power Automate.png">  -->
+        </a>
+      </div>
+
+      <div class="Powerapps">
+        <a href="images/Canvas Apps/Email to Finance.png" data-lightbox="Powerapps" data-title="Email to next approver">
+          <!-- <img src="images/MS Logo/Power Automate.png">  -->
+        </a>
+      </div>
+
+
+      <!-- <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a> -->
+
+    </article>
+
+
+    <article class="col-6 col-12-xsmall work-item">
+      <h3> MS Teams Chatbot Request App:</h3>
+
+      <div class="Chatbot">
+        <a href="images/MS Teams WF/Forms - MS Teams Deployment.png" data-lightbox="Chatbot"
+          data-title="Submit A New Request Using MS Forms in MS Teams"> <img src="images/thumbs/HQ-MS Teams.jpg"
+            width="450px" height="350px"> </a>
+      </div>
+
+      <p> Recreating the same process from PowerApps Request Approval App using MS Teams, MS Forms and Power Automate.
+        Request is initiated in MS Teams via an embedded MS forms. <br><br>
+        After submission, a chat notification is send to the specific receiver to respond via MS teams. Power Automate
+        is used to send notifications in MS Teams as well as updating the Sharepoint databases with data from approver
+        responses
+        <br>
+      </p>
+
+      <div class="Chatbot">
+        <a href="images/MS Teams WF/Forms - MS Teams 2.png" data-lightbox="Chatbot" data-title="Page 2 of Forms">
+          <!-- <img src="images/Portfolio Website/HTML5 Template.png">  -->
+        </a>
+      </div>
+
+      <div class="Chatbot">
+        <a href="images/MS Teams WF/Forms - Submit Success.png" data-lightbox="Chatbot"
+          data-title="Request Submit Success">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <div class="Chatbot">
+        <a href="images/MS Teams WF/Teams - DM Approve.png" data-lightbox="Chatbot"
+          data-title="Teams Notification to Approver">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <div class="Chatbot">
+        <a href="images/MS Teams WF/Teams - DM Response with comments.png" data-lightbox="Chatbot"
+          data-title="Capture response of first approver with card">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+
+      <div class="Chatbot">
+        <a href="images/MS Teams WF/Teams - Finance.png" data-lightbox="Chatbot"
+          data-title="Approver 2 receives the request with comment from first approver">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <div class="Chatbot">
+        <a href="images/MS Teams WF/Teams - WF1.png" data-lightbox="Chatbot"
+          data-title="Creating the MS Teams application using Power Automate">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <div class="Chatbot">
+        <a href="images/MS Teams WF/Teams - Conditional.png" data-lightbox="Chatbot"
+          data-title="A conditional statement that tells the app what to do next based on the request approver's choice above. (Approver or Reject)">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <!-- slideindex?? -->
+      <!-- <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a> -->
+
+    </article>
+
+
+    <article class="col-6 col-12-xsmall work-item">
+      <h3>Reusable Component Library:</h3>
+
+      <div class="Components">
+        <a href="images/Component Library/Create new component Library.png" data-lightbox="Components"
+          data-title="Create a new component library ">
+          <img src="images/thumbs/HQ-Component Library.jpg" width="450px" height="350px">
+        </a>
+      </div>
+
+      <p> Create and update reusable components in one place using PowerApps Component library. This library can be used
+        by any canvas apps within the environment.
+        Apps that are using components from the library gets a notification if there is an update to the component they
+        are using.
+        <br>
+      </p>
+
+      <div class="Components">
+        <a href="images/Component Library/New Component Library.png" data-lightbox="Components"
+          data-title="Newly created component library">
+          <!-- <img src="images/MS Teams WF/Teams - Finance.png">  -->
+        </a>
+      </div>
+
+      <div class="Components">
+        <a href="images/Component Library/Import 1.png" data-lightbox="Components"
+          data-title="Import the component library to use in an app">
+          <!-- <img src="images/MS Teams WF/Forms - MS Teams Deployment.png"> -->
+        </a>
+      </div>
+
+      <div class="Components">
+        <a href="images/Component Library/Select Import.png" data-lightbox="Components"
+          data-title="Select the component you want to import">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <div class="Components">
+        <a href="images/Component Library/Comp - Update 3.png" data-lightbox="Components"
+          data-title="Succesfully imported the component">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <div class="Components">
+        <a href="images/Component Library/App using component.png" data-lightbox="Components"
+          data-title="Application able to use the imported components">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+
+      <div class="Components">
+        <a href="images/Component Library/Comp - Final.png" data-lightbox="Components"
+          data-title="Changing the position of a button in the component">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <div class="Components">
+        <a href="images/Component Library/Comp - Save Screen.png" data-lightbox="Components"
+          data-title="Saving the changes with comments.">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <div class="Components">
+        <a href="images/Component Library/Comp - Update 2.png" data-lightbox="Components"
+          data-title="In-app notification about component updates and their details">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <div class="Components">
+        <a href="images/Component Library/Comp - Update 3.png" data-lightbox="Components"
+          data-title="Succesfully imported the component">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <div class="Components">
+        <a href="images/Component Library/Comp - Updated.png" data-lightbox="Components"
+          data-title="Changes are applied to components that are in the app">
+          <!-- <img src="images/Portfolio Website/W3Schools HTMl.png">  -->
+        </a>
+      </div>
+
+      <!-- slideindex?? -->
+      <!-- <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 3)">&#10095;</a> -->
+
+    </article>
+  </div>
+
+  <script>
+    let slideIndex = [1, 1, 1, 1];
+    let slideId = ["Portfolio", "Powerapps", "Chatbot", "Components"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    showSlides(1, 3)
+
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) { slideIndex[no] = 1 }
+      if (n < 1) { slideIndex[no] = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex[no] - 1].style.display = "block";
+    }
+  </script>
+
+</body>
+
+</html>

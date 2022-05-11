@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Strata by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/lightbox.min.css">
+	<link rel="stylesheet" href="assets/css/overlay.css">
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.othertraining {
+			float: left;
+			width: 50%;
+			padding: 5px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="#" class="image avatar"><img src="images/Certificates/Jay - Photo 2.jpeg" /></a>
+			<h1><strong>Jay K Delicana</strong>,<br> Software Engineer<br />
+				Microsoft Power Platform Developer
+			</h1>
+		</div>
+
+		<div>
+			<img src="images/Certificates/CERT-Fundamentals-Power-Platform.png" height="150" width="150" alt="">
+			<img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png"
+				width="300" height="150" alt="html5 logo, devextreme multi purpose controls html javascript" /></a>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- One -->
+		<section id="one">
+
+			<!-- Section for about me page and resume page -->
+
+			<div w3-include-html="section-resume.html"></div>
+
+		</section>
+
+		<!-- Two -->
+		<section id="two">
+			<h2>Recent Work</h2>
+
+			<div w3-include-html="recentwork.html"></div>
+
+			<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+			
+		</section>
+
+		<!-- Three -->
+		<section id="three">
+			
+			<h2>Certifications and Training</h2>
+			<h4>Microsoft Certifications</h4>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/Certificates/PL-900.png" style="width: 650px; height: 450px">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					Power Apps Fundamentals (PL-900)
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/Certificates/PowerApps Beyond the Basics.png" style="width: 650px; height: 450px">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					Microsoft Power Apps Beyond The Basics
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/Certificates/PowerAutomate Beyond The Basics.png" style="width: 650px; height: 450px">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					Microsoft Power Automate Beyond The Basics
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/Certificates/PowerPlatform Foundations.png" style="width: 650px; height: 450px">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					Microsoft Power Platform Foundations
+				</div>
+			</div>
+
+			<script>
+
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					myIndex++;
+					if (myIndex > x.length) { myIndex = 1 }
+					x[myIndex - 1].style.display = "block";
+					setTimeout(carousel, 2000); // Change image every 2 seconds
+				}
+			</script>
+
+		</section>
+
+		<section id="four">
+			<h2>Other Trainings</h2>
+
+			<div class="row">
+				<div class="othertraining">
+					<img src="images/Certificates/AWS Cert.png" alt="AWS Cloud Fundamentals"
+						style="height: 100%; width: 100%">
+				</div>
+				<div class="othertraining">
+					<img src="images/Certificates/Java Cert.jpg" alt="Learning JAVA" style="height: 100%; width: 100%">
+				</div>
+			</div>
+
+		</section>
+
+		<section id="Five">
+			<h2>Work Experience</h2>
+			<div class="row">
+				<article class="col-6 col-12-xsmall work-item">
+					<a href="https://www.italthaiengineering.com/" class="image fit thumb"><img
+							src="images/Certificates/ITE Logo.png" height="150" width="400px" alt="" /></a>
+					<h3>Italthai Engineering Co. Ltd</h3>
+					<h5>Software Engineer - Power Platform Developer</h5>
+					<p>
+						Solo developer for Italthai's Digital Transformation project building software solutions to
+						modernize the company's business processes. <br>
+						Achieving modernization thru desktop and mobile-ready applications and automated workflows to
+						speed up process and reduce operation costs
+					</p>
+
+				</article>
+				<article class="col-6 col-12-xsmall work-item">
+					<a href="https://www.accenture.com/" class="image fit thumb"><img
+							src="images/Certificates/ACN Logo 2.jpg" height="150px" width="400px" alt="" /></a>
+					<h3>Accenture Incorporated</h3>
+					<h5>Associate Software Engineer</h5>
+					<p>
+						Worked both client-facing and internal-facing projects as software engineer. Projects include
+						technical support for Microsoft Office 365. <br>
+						Migrating users from on-premise to cloud (Office 365). Performing job scheduling and server
+						maintenance.
+					</p>
+
+				</article>
+
+
+
+			</div>
+
+		</section>
+
+		<!-- Six -->
+		<section id="Six">
+			<h2>Contact Me</h2>
+			<p>If you like my work or have any questions, please use the contact form below to send me an email. Follow
+				me on LinkedIn for job opportunities.</p>
+			<div class="row">
+				<div class="col-8 col-12-small">
+					<form method="post" action="#">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
+									placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email"
+									placeholder="Email" /></div>
+							<div class="col-12"><textarea name="message" id="message" placeholder="Message"
+									rows="4"></textarea></div>
+						</div>
+					</form>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" /></li>
+					</ul>
+				</div>
+				<div class="col-4 col-12-small">
+					<ul class="labeled-icons">
+						<li>
+							<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+							Bangkok,<br />
+							10260, Thailand<br />
+						</li>
+						<!-- <li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										000-000-0000
+									</li> -->
+						<li>
+							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+							<a href="mailto:jkvdelicana@gmail.com">jkvdelicana@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<h4>Follow My Social Networks </h4>
+			<ul class="icons">
+				<li><a href="https://github.com/jaydelicana/jaydelicana.github.io" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+				<li><a href="https://www.linkedin.com/in/jay-delicana" class="icon brands fa-linkedin"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="mailto:jkvdelicana@gmail.com" class="icon solid fa-envelope"><span
+							class="label">Email</span></a></li>
+			</ul>
+			<!-- <ul class="copyright">
+						<li>&copy; Strata Template</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul> -->
+		</div>
+	</footer>
+
+
+
+	<!-- Scripts -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/Recent-work-GITHUB.js"></script>
+	<script src="assets/js/Recent-work-PowerApps.js"></script>
+	<script src="assets/js/scriptIncludeFile.js"></script>
+
+
+</body>
+
+</html>
