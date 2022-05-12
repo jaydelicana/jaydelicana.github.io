@@ -90,38 +90,39 @@
 			<h2>Certifications and Training</h2>
 			<h4>Microsoft Certifications</h4>
 
-			<div class="w3-display-container mySlides">
-				<a href="images/Certificates/PL-900.png" class="image fit thumb">
+			<div class="w3-display-container certSlides">
+				<a href="images/Certificates/PL-900.png" data-lightbox="certSlides" class="image fit thumb">
 				<img src="images/Certificates/PL-900.png" ></a>
 				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
 					Power Apps Fundamentals (PL-900)
 				</div>
 			</div>
 
-			<div class="w3-display-container mySlides">
-				<a href="images/Certificates/PowerApps Beyond the Basics.png" class="image fit thumb">
+			<div class="w3-display-container certSlides">
+				<a href="images/Certificates/PowerApps Beyond the Basics.png" data-lightbox="certSlides" class="image fit thumb">
 				<img src="images/Certificates/PowerApps Beyond the Basics.png" ></a>
 				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
 					Microsoft Power Apps Beyond The Basics
 				</div>
 			</div>
 
-			<div class="w3-display-container mySlides">
-				<a href="images/Certificates/PowerAutomate Beyond The Basics.png" class="image fit thumb">
+			<div class="w3-display-container certSlides">
+				<a href="images/Certificates/PowerAutomate Beyond The Basics.png" data-lightbox="certSlides" class="image fit thumb">
 				<img src="images/Certificates/PowerAutomate Beyond The Basics.png"> </a>
 				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
 					Microsoft Power Automate Beyond The Basics
 				</div>
 			</div>
 
-			<div class="w3-display-container mySlides">
-				<a href="images/Certificates/PowerPlatform Foundations.png" class="image fit thumb">
+			<div class="w3-display-container certSlides">
+				<a href="images/Certificates/PowerPlatform Foundations.png" data-lightbox="certSlides" class="image fit thumb">
 				<img src="images/Certificates/PowerPlatform Foundations.png"></a>
 				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
 					Microsoft Power Platform Foundations
 				</div>
 			</div>
 
+			<!-- carousel script -->
 			<script>
 
 				var myIndex = 0;
@@ -129,7 +130,7 @@
 
 				function carousel() {
 					var i;
-					var x = document.getElementsByClassName("mySlides");
+					var x = document.getElementsByClassName("certSlides");
 					for (i = 0; i < x.length; i++) {
 						x[i].style.display = "none";
 					}
@@ -139,6 +140,31 @@
 					setTimeout(carousel, 2000); // Change image every 2 seconds
 				}
 			</script>
+
+			<!-- lightbox script -->
+			<script>
+				let slideIndex = [1, 1, 1, 1];
+				let slideId = ["certSlides"] 
+				showSlides(1, 0);
+				showSlides(1, 1);
+				showSlides(1, 2);
+				showSlides(1, 3)
+			
+				function plusSlides(n, no) {
+				  showSlides(slideIndex[no] += n, no);
+				}
+			
+				function showSlides(n, no) {
+				  let i;
+				  let x = document.getElementsByClassName(slideId[no]);
+				  if (n > x.length) { slideIndex[no] = 1 }
+				  if (n < 1) { slideIndex[no] = x.length }
+				  for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				  }
+				  x[slideIndex[no] - 1].style.display = "block";
+				}
+			  </script>
 
 		</section>
 
