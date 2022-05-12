@@ -117,7 +117,7 @@ body.lb-disable-scrolling {
     width: 64%;
     right: 0;
     float: right;
-    background: url(/images/black-next.png) right 48% no-repeat;
+    background: url(https://www.flaticon.com/free-icon/next_181669?related_id=181669) right 48% no-repeat;
     filter: alpha(Opacity=0);
     opacity: 0;
     -webkit-transition: opacity .6s;
