@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- always check the referenced sources of JS and CSS -->
+  <!-- <link rel="stylesheet" href="assets/css/lightbox.min.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+  <!-- <script src="assets/js/lightbox-plus-jquery.min.js"></script> -->
+
+
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    .Portfolio,
+    .Powerapps,
+    .Chatbot .Components {
+      display: none
+    }
+
+    /* img {
+      vertical-align: middle;
+      max-width: 200px;
+      max-height: 300px;
+    } */
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 100%;
+      max-height: 100%;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover,
+    .next:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    .imagethumbnail {
+      max-width: 400px;
+      max-height: 600px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <h2 style="text-align:left">Recent Work</h2> -->
+  <!-- change class to row -->
+
+  <div class="row">
+
+    <article class="col-6 col-12-xsmall work-item">
+      <h3>Create Custom Table in Dataverse</h3>
+
+
+      <div class="Portfolio Website" style="display: block;">
+        <a href="images/Dataverse/new-table-command.png"  data-lightbox="Portfolio" data-title="GitHub Repository">
+          <img src="images/Dataverse/new-table-command.png"  alt="Portfolio Website using HTML, CSS, and JavaScript" class="image fit thumb"
+           > </a>
+
+      </div>
+
+
+      <p> Create custom table in Dataverse and Import Data from Sharepoint List
+        <br><br>Skills: Datavsere Tables, Sharepoint List, Data Migration
+        <br>
+      </p>
+
+      <div class="Portfolio">
+        <a href="images/Dataverse/new-table-command.png" data-lightbox="Portfolio"
+          data-title="Create New Table in the App Designer">
+          <!-- <img src="images/Certificates/CERT-Fundamentals-Power-Platform.png">  -->
+        </a>
+      </div>
+
+      <div class="Portfolio">
+        <a href="images/Dataverse/new-table-pane-pets.png" data-lightbox="Portfolio"
+          data-title="Create display name for the table">
+        </a>
+      </div>
+
+      <div class="Portfolio">
+        <a href="images/Dataverse/add-new-column.png" data-lightbox="Portfolio"
+          data-title="Add New Column">
+        </a>
+      </div>
+
+      <div class="Portfolio">
+        <a href="images/Dataverse/new-table-primary-column-pets.png" data-lightbox="Portfolio"
+          data-title="Identify the primary column">
+        </a>
+      </div>
+
+      <div class="Portfolio">
+        <a href="images/Dataverse/updated-optionset-add-items.png" data-lightbox="Portfolio"
+          data-title="Create a new column with choice data type and add custom choices">
+        </a>
+      </div>
+
+      <div class="Portfolio">
+        <a href="images/Dataverse/sync-this-choice-with.png" data-lightbox="Portfolio"
+          data-title="Syncing this choice with the table">
+        </a>
+      </div>
+
+    </article>
+
+    <article class="col-6 col-12-xsmall work-item">
+      <h3>Import Data From Sharepoint To Dataverse</h3>
+      <div class="Powerapps" style="display: block;">
+        <a href="images/Dataverse/sharepoint-list.png"  data-lightbox="Powerapps" data-title="Submit a new request">
+          <img src="images/Dataverse/sharepoint-list.png" class="image fit thumb"> </a>
+      </div>
+
+      <p> This is part II of dataverse data management. Importing / migrating data from Sharepoint list to Dataverse
+        <br><br>Skills: Sharepoint, Dataverse, Data Migration, Dataverse Connectors
+        <br>
+      </p>
+
+      <!-- <div class="Powerapps">
+        <a href="images/Dataverse/sharepoint-list.png" data-lightbox="Powerapps"
+          data-title="Data created in Sharepoint list with similar column names">
+        </a>
+      </div> -->
+
+      <div class="Powerapps">
+        <a href="images/Dataverse/import-data.png" data-lightbox="Powerapps"
+          data-title="Import data into dataverse">
+           
+        </a>
+      </div>
+
+      <div class="Powerapps">
+        <a href="images/Dataverse/connect-data-source.png" data-lightbox="Powerapps"
+          data-title="Choose the correct connector with the datasource">
+           
+        </a>
+      </div>
+
+      <div class="Powerapps">
+        <a href="images/Dataverse/choose-data.png" data-lightbox="Powerapps"
+          data-title="Choosing the data to import in Power Query">
+           
+        </a>
+      </div>
+
+      <div class="Powerapps">
+        <a href="images/Dataverse/query-window.png" data-lightbox="Powerapps" 
+        data-title="Query window of Power Query">
+           
+        </a>
+      </div>
+
+      <div class="Powerapps">
+        <a href="images/Dataverse/column-mapping.png" data-lightbox="Powerapps" 
+        data-title="Map the data to existing table in Dataverse">
+           
+        </a>
+      </div>
+
+      <div class="Powerapps">
+        <a href="images/Dataverse/column-mappings.png" data-lightbox="Powerapps" 
+        data-title="Map each column from the sharepoint list to the dataverse table">
+           
+        </a>
+      </div>
+
+      <div class="Powerapps">
+        <a href="images/Dataverse/refresh-settings.png" data-lightbox="Powerapps" 
+        data-title="Choose refresh settings (Manual or Automatic)">
+           
+        </a>
+      </div>
+
+
+      <div class="Powerapps">
+        <a href="images/Dataverse/imported-result.png" data-lightbox="Powerapps" 
+        data-title="Data has been imported from sharepoint list to dataverse">
+           
+        </a>
+      </div>
+
+
+      <!-- <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a> -->
+
+    </article>
+
+  </div>
+
+  <script>
+    let slideIndex = [1, 1, 1, 1];
+    let slideId = ["Portfolio", "Powerapps", "Chatbot", "Components"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    showSlides(1, 3)
+
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) { slideIndex[no] = 1 }
+      if (n < 1) { slideIndex[no] = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex[no] - 1].style.display = "block";
+    }
+  </script>
+
+</body>
+
+</html>
